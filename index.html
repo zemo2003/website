@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yalla! Durham - Authentic Kosher Middle Eastern Food</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Yalla! Durham - Authentic kosher Middle Eastern cuisine. Fresh falafel, shawarma, and schnitzel. Order for pickup via DoorDash. Glatt kosher certified by Chabad Lubavitch.">
+    <meta name="keywords" content="kosher food Durham, Middle Eastern food, falafel Durham, shawarma Durham, kosher food truck, Chabad Durham">
+    <link rel="icon" type="image/png" href="../assets/images/yalla-logo-full-color-rgb-6in@300ppi.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../assets/images/yalla-logo-full-color-rgb-6in@300ppi.png" alt="Yalla! Durham - Kosher Middle Eastern Food" class="logo-img" loading="eager">
+                <span class="logo-text">Yalla! Durham</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#catering" class="nav-link">Catering</a>
+                <a href="#location" class="nav-link">Location</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#order" class="nav-link btn-order">Order Now</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-container">
+            <h1 class="hero-title">
+                Authentic Kosher<br>
+                <span class="highlight">Middle Eastern Food</span>
+            </h1>
+            <div class="hero-image">
+                <img src="../assets/images/yalla menu items/Yalla_Hero_2880x2304.jpg" alt="Yalla! Durham authentic Middle Eastern kosher food" class="hero-food-truck" loading="eager">
+            </div>
+            <p class="hero-subtitle">
+                Fresh falafel, shawarma, and schnitzel made daily. Glatt kosher certified by Chabad Lubavitch. Serving Duke University and the Durham community.
+            </p>
+            <div class="hero-cta">
+                <a href="#order" class="btn btn-primary">Order for Pickup</a>
+                <a href="#menu" class="btn btn-secondary">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Authentic Middle Eastern flavors, kosher certified, made fresh daily</p>
+            </div>
+
+            <!-- Main Entrees -->
+            <div class="menu-category">
+                <h3 class="menu-category-title">Main Entrees</h3>
+                <p class="menu-category-subtitle">Available as Pita, Bowl, or Plate</p>
+                
+                <div class="menu-grid">
+                    <!-- Falafel Pita -->
+                    <div class="menu-item" data-item="falafel-pita">
+                        <div class="menu-item-image">
+                            <img src="../assets/images/yalla menu items/Yalla_FalafelPita_2880x2304.jpg" alt="Falafel Pita" loading="lazy">
+                            <div class="menu-item-overlay">
+                                <button class="btn-order-item" onclick="orderOnDoorDash('falafel-pita')">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Falafel Pita</h4>
+                            <p class="menu-item-description">Crispy chickpea fritters with fresh herbs and spices in pita bread</p>
+                            <div class="menu-item-prices">
+                                <span class="price-option"><strong>$14</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Falafel Bowl -->
+                    <div class="menu-item" data-item="falafel-bowl">
+                        <div class="menu-item-image">
+                            <img src="../assets/images/yalla menu items/Yalla_FalafelBowl_2880x2304.jpg" alt="Falafel Bowl" loading="lazy">
+                            <div class="menu-item-overlay">
+                                <button class="btn-order-item" onclick="orderOnDoorDash('falafel-bowl')">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Falafel Bowl</h4>
+                            <p class="menu-item-description">Crispy chickpea fritters with fresh herbs and spices served in a bowl</p>
+                            <div class="menu-item-prices">
+                                <span class="price-option"><strong>$16</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Falafel Plate -->
+                    <div class="menu-item" data-item="falafel-plate">
+                        <div class="menu-item-image">
+                            <img src="../assets/images/yalla menu items/Yalla_FalafelPlate_2880x2304.jpg" alt="Falafel Plate" loading="lazy">
+                            <div class="menu-item-overlay">
+                                <button class="btn-order-item" onclick="orderOnDoorDash('falafel-plate')">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Falafel Plate</h4>
+                            <p class="menu-item-description">Crispy chickpea fritters with fresh herbs and spices served on a plate</p>
+                            <div class="menu-item-prices">
+                                <span class="price-option"><strong>$17</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shawarma Pita -->
+                    <div class="menu-item" data-item="shawarma-pita">
+                        <div class="menu-item-image">
+                            <img src="../assets/images/yalla menu items/Yalla_ShawarmaPita_2880x2304.jpg" alt="Shawarma Pita" loading="lazy">
+                            <div class="menu-item-overlay">
+                                <button class="btn-order-item" onclick="orderOnDoorDash('shawarma-pita')">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Shawarma Pita</h4>
+                            <p class="menu-item-description">Marinated and slow-roasted meat with traditional spices in pita bread</p>
+                            <div class="menu-item-prices">
+                                <span class="price-option"><strong>$16</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shawarma Bowl -->
+                    <div class="menu-item" data-item="shawarma-bowl">
+                        <div class="menu-item-image">
+                            <img src="../assets/images/yalla menu items/Yalla_ShawarmaBowl_2880x2304.jpg" alt="Shawarma Bowl" loading="lazy">
+                            <div class="menu-item-overlay">
+                                <button class="btn-order-item" onclick="orderOnDoorDash('shawarma-bowl')">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Shawarma Bowl</h4>
+                            <p class="menu-item-description">Marinated and slow-roasted meat with traditional spices served in a bowl</p>
+                            <div class="menu-item-prices">
+                                <span class="price-option"><strong>$18</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shawarma Plate -->
+                    <div class="menu-item" data-item="shawarma-plate">
+                        <div class="menu-item-image">
+                            <img src="../assets/images/yalla menu items/Yalla_ShawarmaPlate_2880x2304.jpg" alt="Shawarma Plate" loading="lazy">
+                            <div class="menu-item-overlay">
+                                <button class="btn-order-item" onclick="orderOnDoorDash('shawarma-plate')">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Shawarma Plate</h4>
+                            <p class="menu-item-description">Marinated and slow-roasted meat with traditional spices served on a plate</p>
+                            <div class="menu-item-prices">
+                                <span class="price-option"><strong>$19</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Schnitzel Pita -->
+                    <div class="menu-item" data-item="schnitzel-pita">
+                        <div class="menu-item-image">
+                            <img src="../assets/images/yalla menu items/Yalla_SchnitzelPita_2880x2304.jpg" alt="Schnitzel Pita" loading="lazy">
+                            <div class="menu-item-overlay">
+                                <button class="btn-order-item" onclick="orderOnDoorDash('schnitzel-pita')">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Schnitzel Pita</h4>
+                            <p class="menu-item-description">Breaded and fried chicken cutlet, crispy and tender in pita bread</p>
+                            <div class="menu-item-prices">
+                                <span class="price-option"><strong>$16</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Schnitzel Bowl -->
+                    <div class="menu-item" data-item="schnitzel-bowl">
+                        <div class="menu-item-image">
+                            <img src="../assets/images/yalla menu items/Yalla_SchnitzelBowl_2880x2304.jpg" alt="Schnitzel Bowl" loading="lazy">
+                            <div class="menu-item-overlay">
+                                <button class="btn-order-item" onclick="orderOnDoorDash('schnitzel-bowl')">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Schnitzel Bowl</h4>
+                            <p class="menu-item-description">Breaded and fried chicken cutlet, crispy and tender served in a bowl</p>
+                            <div class="menu-item-prices">
+                                <span class="price-option"><strong>$18</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Schnitzel Plate -->
+                    <div class="menu-item" data-item="schnitzel-plate">
+                        <div class="menu-item-image">
+                            <img src="../assets/images/yalla menu items/Yalla_SchnitzelPlate_2880x2304.jpg" alt="Schnitzel Plate" loading="lazy">
+                            <div class="menu-item-overlay">
+                                <button class="btn-order-item" onclick="orderOnDoorDash('schnitzel-plate')">Order Now</button>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Schnitzel Plate</h4>
+                            <p class="menu-item-description">Breaded and fried chicken cutlet, crispy and tender served on a plate</p>
+                            <div class="menu-item-prices">
+                                <span class="price-option"><strong>$19</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sides -->
+            <div class="menu-category">
+                <h3 class="menu-category-title">Sides</h3>
+                <div class="menu-grid menu-grid-sides">
+                    <div class="menu-item menu-item-side">
+                        <div class="menu-item-image">
+                            <img src="../assets/images/yalla menu items/Yalla_LargeFrenchFry_2880x2304.jpg" alt="French Fries" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>French Fries</h4>
+                            <div class="menu-item-prices">
+                                <span class="price-option">Small: <strong>$4</strong></span>
+                                <span class="price-option">Large: <strong>$7</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-category">
+                <h3 class="menu-category-title">Drinks</h3>
+                <div class="menu-grid menu-grid-drinks">
+                    <div class="menu-item menu-item-drink">
+                        <div class="menu-item-image">
+                            <img src="../assets/images/yalla menu items/Yalla_Lemonana_2880x2304.jpg" alt="Limonana" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Limonana</h4>
+                            <p class="menu-item-description">Fresh mint lemonade</p>
+                            <div class="menu-item-prices">
+                                <span class="price-option"><strong>$4</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combo Option -->
+            <div class="menu-combo">
+                <div class="combo-card">
+                    <h4>Add Combo</h4>
+                    <p>Any entree + fries + drink</p>
+                    <div class="menu-item-prices">
+                        <span class="price-option"><strong>+$6</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order CTA -->
+            <div class="menu-cta">
+                <h3>Ready to Order?</h3>
+                <p>Order for pickup via DoorDash</p>
+                <a href="#order" class="btn btn-primary btn-large">Order on DoorDash</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Yalla! Durham</h2>
+                <p class="section-subtitle">Authentic kosher Middle Eastern cuisine, made fresh daily</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="about-icon">✡️</div>
+                        <h3>Glatt Kosher Certified</h3>
+                        <p>Fully certified kosher by Chabad Lubavitch, meeting the highest standards for Jewish dietary laws. Owned by Rabbi Nossen Fellig of Chabad at Duke Undergrads. <strong>On-site Mashgiach Kashrut supervision at all times.</strong> All ingredients are carefully selected and prepared according to strict kosher guidelines.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">🍽️</div>
+                        <h3>Fresh & Authentic</h3>
+                        <p>Every dish is made fresh daily using traditional Middle Eastern recipes. Our falafel is hand-formed, our shawarma is marinated for hours, and our hummus is made from scratch.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">🏫</div>
+                        <h3>Serving Duke University</h3>
+                        <p>We're proud to serve the Duke University community, providing quality kosher food options for students, faculty, and staff. Owned by Rabbi Nossen Fellig of Chabad at Duke Undergrads, we're located at 102 Union Drive on campus.</p>
+                    </div>
+                </div>
+
+                <div class="about-gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="../assets/images/yalla-website-21" alt="Yalla! food truck with staff at Duke University" class="gallery-image" loading="lazy">
+                            <p>Yalla! Food Truck at Duke University</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../assets/images/yalla-website-19.jpg" alt="Yalla! menu board showing Mediterranean street food options" class="gallery-image" loading="lazy">
+                            <p>Our Menu - Fresh Mediterranean Street Food</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../assets/images/yalla-website-18.jpg" alt="Yalla! food truck serving window with friendly staff" class="gallery-image" loading="lazy">
+                            <p>Friendly Service & Fresh Food</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours Section -->
+    <section class="location-section" id="location">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Location & Hours</h2>
+                <p class="section-subtitle">Find us at Duke University</p>
+            </div>
+
+            <div class="location-grid">
+                <div class="location-info">
+                    <div class="location-card">
+                        <div class="location-icon">📍</div>
+                        <h3>Address</h3>
+                        <p><strong>102 Union Drive</strong><br>
+                        Durham, NC 27701</p>
+                        <p class="location-note">Duke University Campus</p>
+                    </div>
+
+                    <div class="location-card">
+                        <div class="location-icon">🕐</div>
+                        <h3>Operating Hours</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span class="hours-day">Monday - Thursday</span>
+                                <span class="hours-time">11:00 AM - 2:30 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="hours-day">Friday - Sunday</span>
+                                <span class="hours-time">Closed</span>
+                            </div>
+                        </div>
+                        <p class="hours-note">Hours may vary during holidays and academic breaks</p>
+                    </div>
+
+                    <div class="location-card">
+                        <div class="location-icon">✡️</div>
+                        <h3>Kosher Certification</h3>
+                        <p><strong>Owned by Rabbi Nossen Fellig</strong><br>
+                        Chabad at Duke Undergrads</p>
+                        <p style="margin-top: 1rem; font-weight: 600; color: var(--primary-red);">On-site Mashgiach Kashrut supervision at all times</p>
+                    </div>
+
+                    <div class="location-card">
+                        <div class="location-icon">📱</div>
+                        <h3>Order Ahead</h3>
+                        <p>Order for pickup via DoorDash to skip the line and have your food ready when you arrive.</p>
+                        <a href="#order" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.1234567890!2d-78.9384!3d36.0014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzYsMDAxNCwtNzguOTM4NCw0LjAwMTQ!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus&q=102+Union+Drive,+Durham,+NC+27701" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: var(--radius-xl);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Yalla! Durham Location - 102 Union Drive, Durham, NC 27701">
+                    </iframe>
+                    <p style="text-align: center; margin-top: 1rem;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=102+Union+Drive,+Durham,+NC+27701" target="_blank" rel="noopener noreferrer" style="color: var(--primary-red); text-decoration: none; font-weight: 600;">
+                            Open in Google Maps →
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order-section" id="order">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Order for Pickup</h2>
+                <p class="section-subtitle">Order via DoorDash and pick up at our location</p>
+            </div>
+
+            <div class="order-container">
+                <div class="order-info">
+                    <h3>How to Order</h3>
+                    <div class="order-steps">
+                        <div class="order-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Browse Menu</h4>
+                                <p>Check out our delicious kosher Middle Eastern options</p>
+                            </div>
+                        </div>
+                        <div class="order-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Order on DoorDash</h4>
+                                <p>Select your items and choose pickup option</p>
+                            </div>
+                        </div>
+                        <div class="order-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Pick Up</h4>
+                                <p>Collect your order at the scheduled time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-cta-card">
+                    <h3>Ready to Order?</h3>
+                    <p>Order now on DoorDash for pickup</p>
+                    <a href="https://www.doordash.com/store/yalla!-durham-durham-36399175/81499175/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large doordash-btn">
+                        <span>Order on DoorDash</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </a>
+                    <p class="order-note">New to DoorDash? Sign up and get your first order delivered free*</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section class="catering-section" id="catering">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Catering & Events</h2>
+                <p class="section-subtitle">Fresh, kosher Mediterranean catering packages for your next event</p>
+            </div>
+
+            <div class="catering-intro">
+                <div class="catering-intro-card">
+                    <h3>Perfect for Campus Events, Shabbat Dinners & Celebrations</h3>
+                    <p>Our take-out catering packages are designed for easy pickup and serving. Each package includes house-baked pita, tahini, schug, and all disposable servingware. Everything you need for a memorable kosher dining experience.</p>
+                    <div class="catering-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✓</span>
+                            <span>Minimum 25 guests</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✓</span>
+                            <span>24-hour notice required</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✓</span>
+                            <span>All disposables included</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✓</span>
+                            <span>Kosher supervised</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catering-packages">
+                <h3 class="catering-subtitle">Entrée Packages</h3>
+                <p class="catering-description">Choose one or two proteins. Each package includes hummus, Israeli salad, cabbage salad, pickles, pita bread, tahini, and schug.</p>
+                
+                <div class="package-grid">
+                    <!-- Falafel Package -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4>Falafel Package</h4>
+                            <div class="package-price">$400</div>
+                        </div>
+                        <div class="package-content">
+                            <p class="package-description">Herb-packed chickpea fritters, crisp on the outside and tender inside. A crowd favorite for vegetarians and meat-eaters alike.</p>
+                            <div class="package-details">
+                                <div class="package-quantity">
+                                    <strong>150 falafel balls</strong>
+                                    <span>≈6 per person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shawarma Package -->
+                    <div class="package-card featured-package">
+                        <div class="package-badge">Most Popular</div>
+                        <div class="package-header">
+                            <h4>Shawarma Package</h4>
+                            <div class="package-price">$500</div>
+                        </div>
+                        <div class="package-content">
+                            <p class="package-description">Marinated chicken thighs, slow-grilled with our signature spice blend. Tender, flavorful, and authentically prepared.</p>
+                            <div class="package-details">
+                                <div class="package-quantity">
+                                    <strong>11 lbs cooked chicken</strong>
+                                    <span>≈7 oz per person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Schnitzel Package -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4>Schnitzel Package</h4>
+                            <div class="package-price">$500</div>
+                        </div>
+                        <div class="package-content">
+                            <p class="package-description">Crispy breaded cutlets, sliced for easy serving. A classic favorite that always satisfies.</p>
+                            <div class="package-details">
+                                <div class="package-quantity">
+                                    <strong>12-13 lbs cooked cutlets</strong>
+                                    <span>≈7-8 oz per person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mixed Proteins Package -->
+                    <div class="package-card featured-package">
+                        <div class="package-badge">Best Value</div>
+                        <div class="package-header">
+                            <h4>Mixed Proteins Package</h4>
+                            <div class="package-price">$550</div>
+                        </div>
+                        <div class="package-content">
+                            <p class="package-description">Choose any two proteins for variety. Perfect for larger events where guests want options.</p>
+                            <div class="package-details">
+                                <div class="package-quantity">
+                                    <strong>Two protein options</strong>
+                                    <span>Mix & match to your preference</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catering-includes">
+                <div class="includes-grid">
+                    <div class="includes-card">
+                        <h4>Included with Every Package</h4>
+                        <ul class="includes-list">
+                            <li>Hummus with olive oil (100 oz / ≈4 oz per person)</li>
+                            <li>Israeli salad - tomato, cucumber, parsley (100 oz)</li>
+                            <li>Cabbage salad (100 oz)</li>
+                            <li>Salted pickles (40 oz / ≈1-2 oz per person)</li>
+                            <li>House-baked pita bread (25 pieces / 1 per person)</li>
+                            <li>Tahini sauce</li>
+                            <li>Schug (spicy condiment)</li>
+                            <li>All disposable servingware (plates, napkins, utensils)</li>
+                        </ul>
+                    </div>
+
+                    <div class="includes-card">
+                        <h4>Optional Add-Ons</h4>
+                        <div class="addon-item">
+                            <div class="addon-name">French Fries</div>
+                            <div class="addon-details">5 oz per guest</div>
+                            <div class="addon-price">+$125 per group</div>
+                        </div>
+                        <div class="addon-item">
+                            <div class="addon-name">Drinks Package</div>
+                            <div class="addon-details">25 assorted beverages</div>
+                            <div class="addon-price">$90</div>
+                        </div>
+                        <div class="addon-item">
+                            <div class="addon-name">Individual Beverages</div>
+                            <div class="addon-details">Limonana ($4), Soda ($3), Water ($2)</div>
+                            <div class="addon-price">Per item</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catering-cta">
+                <div class="catering-cta-card">
+                    <h3>Ready to Order Catering?</h3>
+                    <p>Contact us at least 24 hours in advance to reserve your catering package. Pick-up only, ready to serve.</p>
+                    <div class="catering-contact-buttons">
+                        <a href="mailto:chefdaniel@yalladurham.com?subject=Catering Inquiry" class="btn btn-primary">Email Us</a>
+                        <a href="tel:+19196274706" class="btn btn-secondary">Call (919) 627-4706</a>
+                    </div>
+                    <p class="catering-note">Order online at <strong>yalladurham.com</strong> or contact us directly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:chefdaniel@yalladurham.com">chefdaniel@yalladurham.com</a></p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+19196274706">(919) 627-4706</a></p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>102 Union Drive<br>Durham, NC 27701<br>Duke University Campus</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🍽️</div>
+                        <h3>Catering</h3>
+                        <p>Perfect for campus events, Shabbat dinners, and celebrations. Packages for 25+ guests.</p>
+                        <a href="#catering" class="btn btn-secondary">View Catering Packages</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Send us a Message</h3>
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../assets/images/yalla-logo-full-color-rgb-6in@300ppi.png" alt="Yalla! Durham" class="footer-logo-img" loading="lazy">
+                    <span class="footer-logo-text">Yalla! Durham</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#location">Location</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Order</h4>
+                        <ul>
+                            <li><a href="#order">Order on DoorDash</a></li>
+                            <li><a href="#menu">View Menu</a></li>
+                            <li><a href="mailto:chefdaniel@yalladurham.com?subject=Catering Inquiry">Catering</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="mailto:chefdaniel@yalladurham.com">Email</a></li>
+                            <li><a href="tel:+19196274706">Phone</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yalla! Durham. All rights reserved.</p>
+                <p class="footer-kosher">✡️ Glatt Kosher Certified by Chabad Lubavitch</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
